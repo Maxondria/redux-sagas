@@ -2,6 +2,7 @@ import isLoading from './loadingReducer';
 import images from './imagesReducer';
 import error from './errorReducer';
 import nextPage from './nextPageReducer';
+import stats from './statsReducer';
 
 import { combineReducers } from 'redux';
 
@@ -10,6 +11,7 @@ const rootReducer = combineReducers({
     isLoading,
     error,
     nextPage,
+    stats,
 });
 
 export default rootReducer;
