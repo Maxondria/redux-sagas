@@ -14,8 +14,9 @@ const setError = error => ({
     error,
 });
 
-const loadImageStats = () => ({
+const loadImageStats = id => ({
     type: STATS.LOAD,
+    id,
 });
 
 const setImageStats = (id, downloads) => ({

@@ -6,7 +6,7 @@ const statsReducer = (state = initialState.stats, action) => {
         case STATS.LOAD:
             return {
                 ...state,
-                [action.data.id]: {
+                [action.id]: {
                     isLoading: true,
                     downloads: null,
                     error: false,
@@ -24,7 +24,7 @@ const statsReducer = (state = initialState.stats, action) => {
         case STATS.LOAD_FAIL:
             return {
                 ...state,
-                [action.data.id]: {
+                [action.id]: {
                     isLoading: false,
                     downloads: null,
                     error: true,
